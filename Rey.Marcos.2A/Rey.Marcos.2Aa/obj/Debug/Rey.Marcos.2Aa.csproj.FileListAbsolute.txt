@@ -1,0 +1,10 @@
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos.2Aa.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos._2Aa.Form1.resources
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos._2Aa.Properties.Resources.resources
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos.2Aa.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\bin\Debug\Rey.Marcos.2Aa.exe
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\bin\Debug\Rey.Marcos.2Aa.pdb
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\bin\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos.2Aa.exe
+C:\Users\Usuario\Desktop\TP_Laboratorio_II\Rey.Marcos.2A\Rey.Marcos.2Aa\obj\Debug\Rey.Marcos.2Aa.pdb
