@@ -57,7 +57,12 @@ namespace Entidades
                 retorno.Append(" Precio moto: ");
                 retorno.AppendLine(Lavadero._precioMoto.ToString());
 
-                retorno.AppendLine(this.VehiculosLista);
+
+                foreach (Vehiculo vehiclo in this._vehiculo)
+                {
+                    retorno.AppendLine(vehiclo.ToString());
+                }
+                //retorno.AppendLine(this.VehiculosLista);
                 
                 return retorno.ToString();
             }
