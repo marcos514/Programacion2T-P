@@ -1,0 +1,8 @@
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\bin\Debug\comprobar.exe.config
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\obj\Debug\comprobar.csprojResolveAssemblyReference.cache
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\bin\Debug\comprobar.exe
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\bin\Debug\comprobar.pdb
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\bin\Debug\Entidades.dll
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\bin\Debug\Entidades.pdb
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\obj\Debug\comprobar.exe
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\comprobar\obj\Debug\comprobar.pdb

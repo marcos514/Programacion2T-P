@@ -1,0 +1,5 @@
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\Vehiculo\bin\Debug\Entidades.dll
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\Vehiculo\bin\Debug\Entidades.pdb
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\Vehiculo\obj\Debug\Entidades.dll
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\Vehiculo\obj\Debug\Entidades.pdb
+D:\MarcosRey\PruebaParcial\Rey.Marcos.2A\Vehiculo\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
