@@ -1,0 +1,185 @@
+ public class ProveedorDeDatos
+    {
+        public static SqlConnection coneccion;
+        public static SqlCommand comandos;
+        static ProveedorDeDatos()
+        {
+            ProveedorDeDatos.coneccion = new SqlConnection(Properties.Settings.Default.Conexion);
+        }
+
+
+        void datos()
+        {
+	   arriba de la clase	[XmlInclude(typeof(Alumno))]
+            
+            XmlSerializer serializador = new XmlSerializer(typeof(ProveedorDeDatos));
+
+            TextReader lector = new StreamReader(""+Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\hola.xml");
+            TextWriter reader = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\hola.xml");
+            serializador.Serialize(reader, this);
+        }
+
+        public static List<Persona> ObtenerPersonasBD()
+        { 
+            List<Persona> aux = new List<Persona>();
+            ProveedorDeDatos.comandos = new SqlCommand();
+
+            ProveedorDeDatos.comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            comandos.CommandText = "SELECT * FROM personas";
+            try
+            {
+                coneccion.Open();
+                SqlDataReader lector = comandos.ExecuteReader();
+                while (lector.Read())
+                {
+                    aux.Add(new Persona((int)lector[0], (string)lector[1], (string)lector[2], (int)lector[3]));
+                   
+                } 
+                lector.Close();
+            }
+            catch (Exception a)
+            {
+                
+            }
+
+            
+            coneccion.Close();
+
+            return aux; 
+        }
+
+        public static DataTable ObtenerPersonasBD(bool b)
+        {
+            List<Persona> aux = new List<Persona>();
+            ProveedorDeDatos.comandos = new SqlCommand();
+
+            ProveedorDeDatos.comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            comandos.CommandText = "SELECT * FROM personas";
+            try
+            {
+                coneccion.Open();
+                SqlDataReader lector = comandos.ExecuteReader();
+                DataTable table = new DataTable("Personas");
+                table.Load(lector);
+                lector.Close();
+                return table;
+            }
+            catch (Exception a)
+            {
+
+            }
+
+
+            coneccion.Close();
+
+            return null;
+        }
+
+
+
+        public static Persona obtenerPersonaPorId(int id)
+        {
+            ProveedorDeDatos.comandos = new SqlCommand();
+
+            ProveedorDeDatos.comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            comandos.CommandText = "SELECT * FROM personas WHERE id = "+id.ToString();
+
+            coneccion.Open();
+            SqlDataReader lector = comandos.ExecuteReader();
+
+            if (lector.HasRows)
+            {
+                lector.Read();
+                Persona a= new Persona((int)lector[0], (string)lector[1], (string)lector[2], (int)lector[3]) ;
+                lector.Close();
+                coneccion.Close();
+                return a;
+            }
+
+            
+
+            return null;
+            
+        }
+
+        public static bool AgregarPersona(Persona p)
+        {
+            bool a=false;
+            ProveedorDeDatos.comandos = new SqlCommand();
+
+            ProveedorDeDatos.comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            try
+            {
+                comandos.CommandText = "INSERT INTO Personas (nombre,apellido,edad) values('" + p.nombre + "','" + p.apelido + "'," + p.edad + ")";
+                coneccion.Open();
+                if (comandos.ExecuteNonQuery() == 1)
+                {
+                    a = true;
+
+                }
+            }
+            catch (Exception e)
+            {
+                a = false;
+            }
+            coneccion.Close();
+            return a;           
+        }
+
+        public static bool ModificarPersona(Persona p)
+        {
+            bool a = false;
+            ProveedorDeDatos.comandos = new SqlCommand();
+
+            ProveedorDeDatos.comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            try
+            {
+                comandos.CommandText = "UPDATE Personas SET nombre='"+p.nombre +"',apellido='"+p.apelido+"',edad="+p.edad+"WHERE id = "+p.id;
+                coneccion.Open();
+                if (comandos.ExecuteNonQuery() > 0)
+                {
+                    a = true;
+                }
+            }
+            catch (Exception e)
+            {
+                a = false;
+            }
+            coneccion.Close();
+            return a;    
+        }
+
+        public static bool EliminarPersona(Persona p)
+        {
+            comandos.Connection = coneccion;
+            comandos.CommandType = CommandType.Text;
+            comandos.CommandText = "DELETE FROM Personas where id=" + p.id;
+            coneccion.Open();
+            if (comandos.ExecuteNonQuery() == 1)
+            {
+                coneccion.Close();
+                return true;
+            }
+            coneccion.Close();
+            return false;
+        }
+
+    }
+
+abstract/virtual/override/generic/
+
+
+public delegate void nombre();
+public event nombre pepe;
+pepe+=metodo que quiero;
+
+pepe();
+pepe.invoke();
+
+thread es de system.treading;
+
